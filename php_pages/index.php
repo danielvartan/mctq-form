@@ -1,0 +1,947 @@
+<!doctype html>
+<html>
+
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="content-language" content="pt-br"/>
+	<meta name="robots" content="noindex,nofollow"/>
+
+	<title>Questionário de Cronotipo</title>
+	<meta name="description" content="Denomina-se cronotipo as preferências individuais quanto aos horários para a realização de atividades diárias, por exemplo: dormir/acordar, realizar atividades físicas e/ou mentais, dentre outras. Com a ajuda deste questionário, pretendemos compreender como essa característica se apresenta na população." />
+	<meta name="subject" content="Baseado no Munich ChronoType Questionnaire (MCTQ)" />
+	<meta name="keywords" content="cronotipo, sono, duracao do sono, jetlag, questionario de cronotipo, munich chronotype questionnaire, usp, universidade de são paulo, each, escola de artes ciências e humanidades, gipso, grupo interdisciplinar de pesquisa em sono" />
+	<meta name="abstract" content="Baseado no Munich ChronoType Questionnaire (MCTQ)" />
+	
+	<meta property="og:url" content="http://www.each.usp.br/gipso/mctq/" />
+	<meta property="og:type" content="article" />
+	<meta property="og:locale" content="pt_br" />
+	<meta property="og:title" content="Questionário de Cronotipo" />
+	<meta property="og:description" content="Denomina-se cronotipo as preferências individuais quanto aos horários para a realização de atividades diárias, por exemplo: dormir/acordar, realizar atividades físicas e/ou mentais, dentre outras. Com a ajuda deste questionário, pretendemos compreender como essa característica se apresenta na população." />
+	<meta property="og:image" content="http://www.each.usp.br/gipso/mctq/images/og_mctq.jpg" />
+
+	<meta name="revisit-after" content="5 Days"/>
+	<meta name="city" content="Sao Paulo"/>
+	<meta name="state" content="SP"/>
+	<meta name="country" content="Brazil"/>
+	<meta name="zip code" content="03828-000"/>
+	<meta name="distribution" content="Global"/>
+	<meta name="author" content="GIPSO-USP - Grupo Interdisciplinar de Pesquisa em Sono"/>
+	<meta name="owner" content="gipso@usp.br"/>
+	<meta name="reply-to" content="gipso@usp.br"/>
+	<meta name="copyright" content="GIPSO-USP"/>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+	<link href="images/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+	<link rel="stylesheet" href="css/w3.css">
+	<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+        
+</head>
+
+<body style="background-color:#E7E7EB;" >
+
+<!-- HEADER -->
+
+	<?php include "header.php"; ?>
+
+<!-- /HEADER -->
+
+<!-- PAGE CONTENT -->
+
+	<div class="w3-content" style="padding-top:40px; padding-bottom:150px;" id="container">
+
+<!-- Texto Introdutório -->
+
+		<section class="w3-container" id="section_1">
+        
+			<p>Denomina-se cronotipo as preferências individuais quanto aos horários para a realização de atividades diárias, por exemplo: dormir/acordar, realizar atividades físicas e/ou mentais, dentre outras. Com a ajuda deste questionário, pretendemos compreender como essa característica se apresenta na população.</p>
+			<p>Assinale todas as questões para que a análise de seus dados seja bem sucedida.<br>Todas as informações pessoais serão guardadas em sigilo e somente serão utilizadas para fins de pesquisa.
+            </p>
+
+		</section>
+    
+<!-- /Texto Introdutório -->
+
+		<div style="padding-top:24px; padding-bottom:24px;">
+        
+			<hr style="border-color:#808080;">
+
+		</div>
+
+	<form name="mctqFORM" id="mctqFORM" action="php/mctq.php" method="post" autocomplete="off">
+    
+<!-- Código do Pesquisador/Rastreamento-->
+
+		<section class="w3-container" id="section_2" style="padding-bottom:24px;">
+        
+			<div>
+
+                <p>
+				
+	                <label>Escreva o código do pesquisador:</label>
+					
+					<input class="w3-input w3-transparent w3-hover-yellow" style="border-bottom-color:#808080; width:250px; display:inline;" maxlength="30" type="text" name="track" value="" />
+
+                </p>
+
+                <p>
+	                Caso não tenha conhecimento de algum código deixe como está.
+                </p>
+
+			</div>
+
+		</section>
+
+<!-- /Código do Pesquisador/Rastreamento -->
+
+<!-- Dados Pessoais -->
+
+		<section class="w3-container" id="section_3" style="padding-bottom:40px;">
+        
+			<h2>DADOS PESSOAIS</h2>
+            
+			<div class="w3-display-container w3-row">
+
+				<!-- 1st Column -->
+            
+				<div class="w3-col w3-mobile" style="width:47%;">
+                    
+					<p>
+						<label class="w3-label w3-text-black">Nome Completo</label>
+						<input class="w3-input w3-transparent w3-hover-yellow" style="border-bottom-color:#808080;" type="text" name="pdNAME" maxlength="100" required/>
+					</p>
+
+					<p>
+						<label class="w3-label w3-text-black">E-mail</label>
+						<input class="w3-input w3-transparent w3-hover-yellow" style="border-bottom-color:#808080;" type="email" name="pdEMAIL" placeholder="nome@exemplo.com" maxlength="50" required/>
+					</p>
+
+					<p>
+						<label class="w3-label w3-text-black">Data de Nascimento</label>
+						<input class="w3-input w3-transparent w3-hover-yellow" style="border-bottom-color:#808080;" type="date" name="pdBIRTH" required/>
+					</p>
+
+                    <div class="w3-col w3-mobile" style="width:47%;">
+
+                    	<p>
+							<label class="w3-label w3-text-black">País em que Reside</label>
+							<input class="w3-input w3-transparent w3-hover-yellow" style="border-bottom-color:#808080;" type="text" name="pdCOUNTRY" maxlength="50" required/>
+						</p>
+
+                    </div>
+
+                    <div class="w3-col w3-mobile" style="width:47%; float:right;">
+
+						<p>
+							<label class="w3-label w3-text-black">Estado em que Reside</label>
+							<input class="w3-input w3-transparent w3-hover-yellow" style="border-bottom-color:#808080;" type="text" name="pdSTATE" maxlength="50" required/>
+						</p>
+
+                    </div>
+
+                    <div class="w3-col w3-mobile" style="width:47%;">
+
+						<p>
+							<label class="w3-label w3-text-black">Cidade em que Reside</label>
+							<input class="w3-input w3-transparent w3-hover-yellow" style="border-bottom-color:#808080;" type="text" name="pdCITY" maxlength="50" required/>
+						</p>
+
+                    </div>
+
+                    <div class="w3-col w3-mobile" style="width:47%; float:right;">
+
+						<p>
+							<label class="w3-label w3-text-black">CEP ou Código Postal</label>
+							<input class="w3-input w3-transparent w3-hover-yellow" style="border-bottom-color:#808080;" type="number" name="pdPOSTAL" maxlength="50" required/>
+						</p>
+
+                    </div>
+
+				</div>
+
+				<!-- /1st Column -->
+
+				<!-- 2nd Column  -->
+        
+				<div class="w3-col w3-mobile" style="width:47%; float:right;">
+
+                    <div class="w3-col w3-mobile" style="width:47%;">
+
+						<p>
+       						<label class="w3-label w3-text-black">Altura (cm)</label>
+							<input class="w3-input w3-transparent w3-hover-yellow" style="border-bottom-color:#808080;" type="number" name="pdHEIGHT" maxlength="3" required/>
+						</p>
+
+                    </div>
+
+                    <div class="w3-col w3-mobile" style="width:47%; float:right;">
+
+	        		    <p>
+		            	<label class="w3-label w3-text-black">Peso (kg)</label>
+			                <input class="w3-input w3-transparent w3-hover-yellow" style="border-bottom-color:#808080;" type="number" name="pdWEIGHT" maxlength="3" required/>
+						</p>
+
+                    </div>
+
+					<p>
+
+						<p>
+                        <label class="w3-label w3-text-black">Sexo Biológico</label>
+                        </p>
+						<input class="w3-radio" type="radio" name="pdGENDER" value="1" required/><span style="padding-right:16px;"> Feminino</span>
+		                <input class="w3-radio" type="radio" name="pdGENDER" value="2" required/><span style="padding-right:16px;"> Masculino</span>
+                    </p>
+
+                    <p>
+
+						<p style="padding-top:8px">
+                        <label class="w3-label w3-text-black">Identidade de Gênero</label>
+                        </p>
+						<input class="w3-radio" type="radio" name="pdGENDERidentity" value="1" required/><span style="padding-right:16px;"> Mulher</span>
+		                <input class="w3-radio" type="radio" name="pdGENDERidentity" value="2" required/><span style="padding-right:16px;"> Homem</span>
+		                <input class="w3-radio" type="radio" name="pdGENDERidentity" value="3" required/><span style="padding-right:16px;"> Não-Binário</span>
+
+                    </p>
+
+                    <p>
+
+						<p style="padding-top:8px;">
+                            <label class="w3-label w3-text-black">Orientação Sexual</label>
+						</p>
+
+						<div class="w3-col w3-mobile" style="width:35%;">
+
+							<input class="w3-radio" type="radio" name="pdSEXUALORIENTATION" value="1" required/><span style="padding-right:16px;"> Heterossexual</span><br>
+							<input class="w3-radio" type="radio" name="pdSEXUALORIENTATION" value="3" required/><span style="padding-right:16px;"> Bissexual</span>
+                        
+                        </div>
+
+						<div class="w3-col w3-mobile" style="width:64%; float:right;">
+
+			                <input class="w3-radio" type="radio" name="pdSEXUALORIENTATION" value="2" required/><span style="padding-right:16px;"> Homossexual</span><br>
+	                        <input class="w3-radio" type="radio" name="pdSEXUALORIENTATION" value="4" required/><span style="padding-right:16px;"> Assexual</span>
+                        
+                       	</div>
+                        
+					</p>
+
+				</div>
+
+				<!-- 2nd Column  -->
+
+			</div>
+
+		</section>
+
+<!-- /Dados Pessoais -->
+
+<!-- Hábitos e Saúde -->
+
+		<section class="w3-container" id="section_4" style="padding-bottom:30px;">
+        
+			<h2>HÁBITOS E SAÚDE</h2>
+			<p>
+            A presença de distúrbios e o uso de drogas podem afetar o resultado de alguns estudos.
+            </p>
+          
+			<div class="w3-display-container w3-row">
+
+				<!-- 1st Column -->
+
+				<div class="w3-col w3-mobile" style="width:47%">
+
+					<p>
+
+						<p>
+                        <label class="w3-label w3-text-black">Faz uso de alguma droga para dormir?</label>
+                        </p>
+						
+                        <input class="w3-radio" type="radio" name="hhDRUGS" value="1" required/><span style="padding-right:16px;"> Sim</span>
+                        <input class="w3-radio" type="radio" name="hhDRUGS" value="0" required/><span style="padding-right:16px;"> Não</span>
+                        <label style="padding-right:16px">Qual?</label>
+                        <input class="w3-input w3-transparent w3-hover-yellow" style="border-bottom-color:#808080; width:220px; display:inline;" type="text" name="hhDRUGSwhich" maxlength="100"/>
+
+					</p>
+
+					<p>
+
+						<p>
+                        <label class="w3-label w3-text-black">Tem algum distúrbio de sono?</label>
+                        </p>
+						
+                        <input class="w3-radio" type="radio" name="hhSLEEPDISORDER" value="1" required/><span style="padding-right:16px;"> Sim</span>
+                        <input class="w3-radio" type="radio" name="hhSLEEPDISORDER" value="0" required/><span style="padding-right:16px;"> Não</span>
+                        <label style="padding-right:16px">Qual?</label>
+                        <input class="w3-input w3-transparent w3-hover-yellow" style="border-bottom-color:#808080; width:220px; display:inline;" type="text" name="hhSLEEPDISORDERwhich" maxlength="100"/>
+
+					</p>
+
+                    <p>
+
+						<p>
+                        <label class="w3-label w3-text-black">Faz uso de alguma medicação diariamente?</label>
+                        </p>
+						
+                        <input class="w3-radio" type="radio" name="hhMEDICATION" value="1" required/><span style="padding-right:16px;"> Sim</span>
+                        <input class="w3-radio" type="radio" name="hhMEDICATION" value="0" required/><span style="padding-right:16px;"> Não</span>
+                        <label style="padding-right:16px">Qual?</label>
+                        <input class="w3-input w3-transparent w3-hover-yellow" style="border-bottom-color:#808080; width:220px; display:inline;" type="text" name="hhMEDICATIONwhich" maxlength="100"/>
+
+					</p>
+
+					<p>
+
+						<p>
+                        <label class="w3-label w3-text-black">Você ronca ao dormir?</label>
+                        </p>
+						
+                        <input class="w3-radio" type="radio" name="hhSNORE" value="1" required/><span style="padding-right:16px;"> Sim</span>
+                        <input class="w3-radio" type="radio" name="hhSNORE" value="0" required/><span style="padding-right:16px;"> Não</span>
+                        <input class="w3-radio" type="radio" name="hhSNORE" value="2" required/><span style="padding-right:16px;"> Não Sei</span>
+
+					</p>
+
+				</div>
+
+				<!-- /1st Column -->
+
+				<!-- 2nd Column -->
+        		
+				<div class="w3-col w3-mobile" style="width:47%; float:right;">
+
+					<p>
+
+                    	<p class="w3-label w3-text-black">
+                        Trabalha e/ou Estuda?
+                        </p>
+                        
+                        <input class="w3-check" type="checkbox" name="hhWORK" value="1"/><label style="padding-right:16px;"> Trabalho</label>
+                        <input class="w3-check" type="checkbox" name="hhSTUDY" value="1"/><label style="padding-right:16px;"> Estudo</label>
+                        <input class="w3-check" type="checkbox" name="hhNOWORKORSTUDY" value="1"/><label>Não Trabalho nem Estudo</label>
+	                    </p>
+                    
+					<div id="shift">
+
+                    	<div class="w3-col w3-mobile" style="width:47%;" id="workPERIOD">
+
+                    		<p>
+
+                        		<p class="w3-label w3-text-black">
+								Períodos em que Trabalha
+                                </p>
+
+                        		<input class="w3-check" type="checkbox" name="hhWORKmorning" value="1"/><label style="padding-right:16px;"> Manhã</label><br>
+                        		<input class="w3-check" type="checkbox" name="hhWORKafternoon" value="1"/><label style="padding-right:16px;"> Tarde</label><br>
+                        		<input class="w3-check" type="checkbox" name="hhWORKevening" value="1"/><label style="padding-right:16px;"> Noite</label><br>
+                        		<input class="w3-check" type="checkbox" name="hhWORKweehours" value="1"/><label> Madugada</label>
+
+                        	</p>
+
+                    	</div>
+
+                    	<div class="w3-col w3-mobile" style="width:47%; float:right;" id="studyPERIOD">
+
+                    		<p>
+
+                        		<p><label class="w3-label w3-text-black">Períodos em que Estuda</label>
+                                </p>
+
+                        		<input class="w3-check" type="checkbox" name="hhSTUDYmorning" value="1"/><span style="padding-right:16px;"> Manhã</span><br>
+                        		<input class="w3-check" type="checkbox" name="hhSTUDYafternoon" value="1"/><span style="padding-right:16px;"> Tarde</span><br>
+                        		<input class="w3-check" type="checkbox" name="hhSTUDYevening" value="1"/><span style="padding-right:16px;"> Noite</span><br>
+                        		<input class="w3-check" type="checkbox" name="hhSTUDYweehours" value="1"/><span style=""> Madugada</span>
+	                        	</p>
+
+						</div> 
+
+					</div>
+
+				</div>
+
+				<!-- 2nd Column -->
+
+			</div>
+
+		</section>
+
+<!-- /Hábitos e Saúde -->
+
+<!-- Questionário de Cronotipo -->
+
+		<section class="w3-container" id="section_5" style="padding-bottom:40px;">
+        
+			<h2>QUESTIONÁRIO DE CRONOTIPO</h2>
+
+			<div>
+
+               	<p>
+
+					<label><span style="padding-right:10px;">
+					Quantos dias na semana são dias de aula ou trabalho para você?
+					</span></label>
+                    
+					<select class="w3-select w3-transparent w3-hover-yellow" style="border-bottom-color:#808080; width:100px; display:inline;" name="mctqWD" required>
+						<option value="" disable selected></option>
+						<option value="1">1 dia</option> 
+						<option value="2">2 dias</option> 
+						<option value="3">3 dias</option> 
+						<option value="4">4 dias</option> 
+						<option value="5">5 dias</option> 
+						<option value="6">6 dias</option> 
+						<option value="7">7 dias</option>
+					</select>                
+
+					<p style="padding-top:20px;">
+						<b>Em dias de trabalho ou estudo:</b>
+					</p>
+
+               	</p>
+
+			</div>
+
+			<!-- "Em dias de trabalho ou estudo:" -->
+
+			<div class="w3-display-container w3-row" style="padding-bottom:20px;">
+
+				<!-- 1st Column -->
+            
+				<div class="w3-col w3-mobile" style="width:47%;">
+
+					<p style="padding-bottom:20px;">
+						
+                    	<label>Você <b>vai para a cama</b> às</label>
+	
+	                    <select class="w3-select w3-transparent w3-hover-yellow" style="border-bottom-color:#808080; width:60px; display:inline;" name="mctqBTwHH" required>
+							<option value="" disable selected>HH</option>
+							<option value="00">00</option>
+							<option value="01">01</option>
+							<option value="02">02</option>
+							<option value="03">03</option> 
+							<option value="04">04</option>
+							<option value="05">05</option>
+							<option value="06">06</option> 
+							<option value="07">07</option>
+							<option value="08">08</option>
+							<option value="09">09</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option> 
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option> 
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+						</select>
+						:
+						<select class="w3-select w3-transparent w3-hover-yellow" style="border-bottom-color:#808080; width:60px; display:inline;" name="mctqBTwMM" required>
+							<option value="" disable selected>MM</option>
+							<option value="00">00</option>
+							<option value="10">10</option>
+							<option value="20">20</option>
+							<option value="30">30</option>
+							<option value="40">40</option>
+							<option value="50">50</option>
+						</select> horas
+
+					</p>
+                        
+					<p style="padding-bottom:20px;">
+                    	Algumas pessoas permanecem um <b>tempo acordadas</b> depois que vão se deitar
+					</p>
+
+					<p style="padding-bottom:20px;">
+						
+                    	<label><b>Depois de ir para a cama</b>, <br>você decide dormir às</label>
+	
+	                    <select class="w3-select w3-transparent w3-hover-yellow" style="border-bottom-color:#808080; width:60px; display:inline;" name="mctqSPrepwHH" required>
+							<option value="" disable selected>HH</option>
+							<option value="00">00</option>
+							<option value="01">01</option>
+							<option value="02">02</option>
+							<option value="03">03</option> 
+							<option value="04">04</option>
+							<option value="05">05</option>
+							<option value="06">06</option> 
+							<option value="07">07</option>
+							<option value="08">08</option>
+							<option value="09">09</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option> 
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option> 
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+						</select>
+						:
+						<select class="w3-select w3-transparent w3-hover-yellow" style="border-bottom-color:#808080; width:60px; display:inline;" name="mctqSPrepwMM" required>
+							<option value="" disable selected>MM</option>
+							<option value="00">00</option>
+							<option value="10">10</option>
+							<option value="20">20</option>
+							<option value="30">30</option>
+							<option value="40">40</option>
+							<option value="50">50</option>
+						</select> horas
+
+					</p>
+
+					<p>
+                        
+						<label>Você precisa de</label>
+
+						<select class="w3-select w3-transparent w3-hover-yellow" style="border-bottom-color:#808080; width:150px; display:inline;" name="mctqSLatwMM" required>
+							<option value="" disable selected>___ minutos</option>
+							<option value="00">00 minutos</option>
+							<option value="05">05 minutos</option>
+							<option value="10">10 minutos</option>
+							<option value="15">15 minutos</option> 
+							<option value="20">20 minutos</option>
+							<option value="25">25 minutos</option>
+							<option value="30">30 minutos</option>
+							<option value="35">35 minutos</option> 
+							<option value="40">40 minutos</option>
+							<option value="45">45 minutos</option>
+							<option value="50">50 minutos</option>
+							<option value="55">55 minutos</option>
+							<option value="60">60 minutos</option>
+						</select> para dormir
+
+					</p>
+
+				</div>
+
+				<!-- /1st Column -->
+
+				<!-- 2nd Column -->
+
+				<div class="w3-col w3-mobile" style="width:47%; float:right;">
+
+					<p style="padding-bottom:20px;">
+						
+                    	<label>Você <b>acorda</b> às</label>
+	
+	                    <select class="w3-select w3-transparent w3-hover-yellow" style="border-bottom-color:#808080; width:60px; display:inline;" name="mctqSEwHH" required>
+							<option value="" disable selected>HH</option>
+							<option value="00">00</option>
+							<option value="01">01</option>
+							<option value="02">02</option>
+							<option value="03">03</option> 
+							<option value="04">04</option>
+							<option value="05">05</option>
+							<option value="06">06</option> 
+							<option value="07">07</option>
+							<option value="08">08</option>
+							<option value="09">09</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option> 
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option> 
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+						</select>
+						:
+						<select class="w3-select w3-transparent w3-hover-yellow" style="border-bottom-color:#808080; width:60px; display:inline;" name="mctqSEwMM" required>
+							<option value="" disable selected>MM</option>
+							<option value="00">00</option>
+							<option value="10">10</option>
+							<option value="20">20</option>
+							<option value="30">30</option>
+							<option value="40">40</option>
+							<option value="50">50</option>
+						</select> horas
+
+					</p>
+  
+					<p style="padding-bottom:20px;">
+
+						<input class="w3-radio" type="radio" name="mctqAlarmw" value="1" required/><span style="padding-right:16px;"> Com despertador</span><br>
+                        <input class="w3-radio" type="radio" name="mctqAlarmw" value="0" required/><span style="padding-right:16px;"> Sem despertador</span>
+
+					</p>
+
+					<p style="padding-bottom:20px;">
+                        
+                       	<label>Você se levanta</label>
+
+						<select class="w3-select w3-transparent w3-hover-yellow" style="border-bottom-color:#808080; width:150px; display:inline;" name="mctqSIwMM" required>
+							<option value="">___ minutos</option>
+							<option value="00">00 minutos</option>
+							<option value="10">10 minutos</option>
+							<option value="20">20 minutos</option>
+							<option value="30">30 minutos</option>
+							<option value="40">40 minutos</option> 
+							<option value="50">50 minutos</option>
+							<option value="60">60 minutos</option>
+						</select> depois de despertar
+
+					</p>
+
+					<p>
+						
+                    	<label><b>Em média</b>, você passa</label>
+	
+	                    <select class="w3-select w3-transparent w3-hover-yellow" style="border-bottom-color:#808080; width:60px; display:inline;" name="mctqLEwHH" required>
+							<option value="" disable selected>HH</option>
+							<option value="00">00</option>
+							<option value="01">01</option>
+							<option value="02">02</option>
+							<option value="03">03</option> 
+							<option value="04">04</option>
+							<option value="05">05</option>
+							<option value="06">06</option> 
+							<option value="07">07</option>
+							<option value="08">08</option>
+							<option value="09">09</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option> 
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option> 
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+						</select>
+						:
+						<select class="w3-select w3-transparent w3-hover-yellow" style="border-bottom-color:#808080; width:60px; display:inline;" name="mctqLEwMM" required>
+							<option value="" disable selected>MM</option>
+							<option value="00">00</option>
+							<option value="10">10</option>
+							<option value="20">20</option>
+							<option value="30">30</option>
+							<option value="40">40</option>
+							<option value="50">50</option>
+						</select> ao ar livre à luz do dia (sem um telhado ou cobertura sobre a cabeça)
+
+					</p>
+
+				</div>
+
+				<!-- /2nd Column -->
+
+			</div>
+
+			<!-- /"Em dias de trabalho ou estudo:" -->
+
+			<!-- "Fora dos dias de trabalho (finais de semana, feriados e folgas)" -->
+
+			<div>
+
+				<div style="padding-bottom:10px;">
+                
+                	<p>
+
+            			<b>Fora dos dias de trabalho (finais de semana, feriados e folgas)</b>
+
+					</p>
+
+				</div>
+
+			</div>
+
+			<div class="w3-display-container w3-row">
+
+				<!-- 1st Column -->
+            
+				<div class="w3-col w3-mobile" style="width:47%;">
+
+					<p style="padding-bottom:20px;">
+						
+                    	Você <b>vai para a cama</b> às
+	
+	                    <select class="w3-select w3-transparent w3-hover-yellow" style="border-bottom-color:#808080; width:60px; display:inline;" name="mctqBTfHH" required>
+							<option value="" disable selected>HH</option>
+							<option value="00">00</option>
+							<option value="01">01</option>
+							<option value="02">02</option>
+							<option value="03">03</option> 
+							<option value="04">04</option>
+							<option value="05">05</option>
+							<option value="06">06</option> 
+							<option value="07">07</option>
+							<option value="08">08</option>
+							<option value="09">09</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option> 
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option> 
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+						</select>
+						:
+						<select class="w3-select w3-transparent w3-hover-yellow" style="border-bottom-color:#808080; width:60px; display:inline;" name="mctqBTfMM" required>
+							<option value="" disable selected>MM</option>
+							<option value="00">00</option>
+							<option value="10">10</option>
+							<option value="20">20</option>
+							<option value="30">30</option>
+							<option value="40">40</option>
+							<option value="50">50</option>
+						</select> horas
+
+					</p>
+
+					<p style="padding-bottom:20px;">
+						
+                    	<b>Depois de ir para a cama</b>, <br>você decide dormir às
+	
+	                    <select class="w3-select w3-transparent w3-hover-yellow" style="border-bottom-color:#808080; width:60px; display:inline;" name="mctqSPrepfHH" required>
+							<option value="" disable selected>HH</option>
+							<option value="00">00</option>
+							<option value="01">01</option>
+							<option value="02">02</option>
+							<option value="03">03</option> 
+							<option value="04">04</option>
+							<option value="05">05</option>
+							<option value="06">06</option> 
+							<option value="07">07</option>
+							<option value="08">08</option>
+							<option value="09">09</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option> 
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option> 
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+						</select>
+						:
+						<select class="w3-select w3-transparent w3-hover-yellow" style="border-bottom-color:#808080; width:60px; display:inline;" name="mctqSPrepfMM" required>
+							<option value="" disable selected>MM</option>
+							<option value="00">00</option>
+							<option value="10">10</option>
+							<option value="20">20</option>
+							<option value="30">30</option>
+							<option value="40">40</option>
+							<option value="50">50</option>
+						</select> horas
+
+					</p>
+
+					<p>
+                        
+						Você precisa de
+
+						<select class="w3-select w3-transparent w3-hover-yellow" style="border-bottom-color:#808080; width:150px; display:inline;" name="mctqSLatfMM" required>
+							<option value="" disable selected>___ minutos</option>
+							<option value="00">00 minutos</option>
+							<option value="05">05 minutos</option>
+							<option value="10">10 minutos</option>
+							<option value="15">15 minutos</option> 
+							<option value="20">20 minutos</option>
+							<option value="25">25 minutos</option>
+							<option value="30">30 minutos</option>
+							<option value="35">35 minutos</option> 
+							<option value="40">40 minutos</option>
+							<option value="45">45 minutos</option>
+							<option value="50">50 minutos</option>
+							<option value="55">55 minutos</option>
+							<option value="60">60 minutos</option>
+						</select> para dormir
+
+					</p>
+
+				</div>
+
+				<!-- /1st Column -->
+
+				<!-- 2nd Column -->
+
+				<div class="w3-col w3-mobile" style="width:47%; float:right;">
+
+					<p style="padding-bottom:20px;">
+						
+                    	Você <b>acorda</b> às
+	
+	                    <select class="w3-select w3-transparent w3-hover-yellow" style="border-bottom-color:#808080; width:60px; display:inline;" name="mctqSEfHH" required>
+							<option value="" disable selected>HH</option>
+							<option value="00">00</option>
+							<option value="01">01</option>
+							<option value="02">02</option>
+							<option value="03">03</option> 
+							<option value="04">04</option>
+							<option value="05">05</option>
+							<option value="06">06</option> 
+							<option value="07">07</option>
+							<option value="08">08</option>
+							<option value="09">09</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option> 
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option> 
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+						</select>
+						:
+						<select class="w3-select w3-transparent w3-hover-yellow" style="border-bottom-color:#808080; width:60px; display:inline;" name="mctqSEfMM" required>
+							<option value="" disable selected>MM</option>
+							<option value="00">00</option>
+							<option value="10">10</option>
+							<option value="20">20</option>
+							<option value="30">30</option>
+							<option value="40">40</option>
+							<option value="50">50</option>
+						</select> horas
+
+					</p>
+
+					<p style="padding-bottom:20px;">
+
+						<input class="w3-radio" type="radio" name="mctqAlarmf" value="1" required/><span style="padding-right:16px;"> Com despertador</span><br>
+                        <input class="w3-radio" type="radio" name="mctqAlarmf" value="0" required/><span style="padding-right:16px;"> Sem despertador</span>
+
+					</p>
+
+					<p style="padding-bottom:20px;">
+                        
+                       	Você se levanta
+
+						<select class="w3-select w3-transparent w3-hover-yellow" style="border-bottom-color:#808080; width:150px; display:inline;" name="mctqSIfMM" required>
+							<option value="">___ minutos</option>
+							<option value="00">00 minutos</option>
+							<option value="10">10 minutos</option>
+							<option value="20">20 minutos</option>
+							<option value="30">30 minutos</option>
+							<option value="40">40 minutos</option> 
+							<option value="50">50 minutos</option>
+							<option value="60">60 minutos</option>
+						</select> depois de despertar
+
+					</p>
+
+					<p>
+						
+                    	<label><b>Em média</b>, você passa</label>
+	
+	                    <select class="w3-select w3-transparent w3-hover-yellow" style="border-bottom-color:#808080; width:60px; display:inline;" name="mctqLEfHH" required>
+							<option value="" disable selected>HH</option>
+							<option value="00">00</option>
+							<option value="01">01</option>
+							<option value="02">02</option>
+							<option value="03">03</option> 
+							<option value="04">04</option>
+							<option value="05">05</option>
+							<option value="06">06</option> 
+							<option value="07">07</option>
+							<option value="08">08</option>
+							<option value="09">09</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option> 
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option> 
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+						</select>
+						:
+						<select class="w3-select w3-transparent w3-hover-yellow" style="border-bottom-color:#808080; width:60px; display:inline;" name="mctqLEfMM" required>
+							<option value="" disable selected>MM</option>
+							<option value="00">00</option>
+							<option value="10">10</option>
+							<option value="20">20</option>
+							<option value="30">30</option>
+							<option value="40">40</option>
+							<option value="50">50</option>
+						</select> ao ar livre à luz do dia (sem um telhado ou cobertura acima da cabeça)
+
+					</p>
+
+				</div>
+
+				<!-- /2nd Column -->
+
+			</div>
+
+			<!-- /"Fora dos dias de trabalho (finais de semana, feriados e folgas)" -->
+
+		</section>
+
+<!-- /Questionário de Cronotipo -->
+
+<!-- Botões Enviar/Limpar -->
+
+		<section class="w3-container w3-right" id="section_5">
+
+			<p><input type="submit" value="Enviar" class="w3-button w3-yellow w3-round" /></p>
+
+		</section>
+
+<!-- /Botões Enviar/Limpar -->
+
+	</form> 
+
+	</div>
+
+<!-- /PAGE CONTENT -->
+
+<!-- FOOTER -->
+
+<!-- /FOOTER -->
+
+<!-- TRACKING SCRIPTS -->
+
+	<?php include "../mctq/php/tracking.php"; ?>
+
+<!-- /TRACKING SCRIPTS -->
+
+</body>
+
+</html>			
