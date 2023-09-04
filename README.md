@@ -5,5 +5,3 @@
 <!-- badges: end -->
 
 Files from the old Munich ChronoType Questionnaire (MCTQ) form hosted at `http:://each.usp.br/gipso/mctq`.
-
-This project was part of a project whose main author were [Daniel Vartanian](https://github.com/danielvartan).
